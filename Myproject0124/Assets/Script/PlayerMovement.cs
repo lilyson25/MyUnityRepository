@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rigid; //선언만 한 상태
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Start()  
     {
         rigid = GetComponent<Rigidbody2D>();
         //GetComponent<0000> Genedics?
