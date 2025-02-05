@@ -12,16 +12,17 @@ public class CreatObject : MonoBehaviour
     //3. 물체를 방향에 맞춰 발사하는 기능을 호출해온다
  
     public GameObject prefab; //오브젝트 프리팹 등록
-    GameObject scoreText; //점수표시
+    GameObject scoreText; //점수표시: UI>TextMeshPro 사용)
     public float power = 500f;
     public int score = 0;
 
     private void Start()
     {
         scoreText = GameObject.Find("score"); //게임씬에서 score를 찾아서 등록
+        scoreText.GetComponent<TextMeshProUGUI>().text = $"점수 : 0";
     }
 
-    //점수획득
+    //점수를 증가시키는 
     //value = 수치
     public void ScorePlus(int value)
     {
