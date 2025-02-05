@@ -1,8 +1,7 @@
-using System.Numerics;
+
 using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.SocialPlatforms.Impl;
+
 
 public class CreatObject : MonoBehaviour
 {
@@ -15,11 +14,25 @@ public class CreatObject : MonoBehaviour
     GameObject scoreText; //점수표시: UI>TextMeshPro 사용)
     public float power = 500f;
     public int score = 0;
+    
+    public Material newSkyboxMaterial;//30점 이상일때 변경될 newSkyboxMaterial
+
+    private MaterialChange materialChange;
 
     private void Start()
     {
         scoreText = GameObject.Find("score"); //게임씬에서 score를 찾아서 등록
         scoreText.GetComponent<TextMeshProUGUI>().text = $"점수 : 0";
+
+        materialChange = FindObjectOfType<MaterialChange>(); // MaterialChange 스크립트 찾기
+        if (materialChange == null)
+        {
+            Debug.LogError("MaterialChange xx");
+        }
+        else
+        {
+            Debug.Log("MaterialChange OO");
+        }
     }
 
     //점수를 증가시키는 
@@ -28,6 +41,12 @@ public class CreatObject : MonoBehaviour
     {
         score += value;
         SetScoreText();
+
+        if (score >=30 && materialChange != null && newSkyboxMaterial != null)
+        {
+            Debug.Log("ok");
+            materialChange.ChangeSkybox(newSkyboxMaterial);
+        }
 
     }
 
