@@ -4,3 +4,17 @@
 ####
 #####
 ##### (H6)
+소스코드 쓰기위한 시작 (```)
+```cs
+using UnityEngine;
+public class sample : MonoBehaviour
+{
+void Start()
+{
+Debug.Log("Hi");
+}
+}
+
+
+
+```
