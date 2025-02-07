@@ -38,3 +38,11 @@
 최소가 -80, 최대가 0
 수치변경시 Mathf.Log10(슬라이더 수치) * 20);을 통해 범위를 설정하고
 슬라이더의 최소 값이 0.01일 경우 -80이 1일 경우 0이 계산됨
+
+
+# 유니티 에디터에서 GUI를 보여주는 시스템
+>using UnityEngine.UI / using UnityEngine.UIElements
+* IMGUI 디버그에서 사용
+* UGUI 일반적으로 사용되는 UI도구
+* UIElements 에디터 기반으로 진행하는 도구
+
