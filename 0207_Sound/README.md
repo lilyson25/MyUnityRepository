@@ -41,8 +41,11 @@
 
 
 # 유니티 에디터에서 GUI를 보여주는 시스템
->using UnityEngine.UI / using UnityEngine.UIElements
+> using UnityEngine.UI / using UnityEngine.UIElements
 * IMGUI 디버그에서 사용
 * UGUI 일반적으로 사용되는 UI도구
 * UIElements 에디터 기반으로 진행하는 도구
 
+
+# 유니티 Recorder 
+> package Manager를 통해 다운받아 사용
