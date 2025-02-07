@@ -4,7 +4,7 @@
 ####
 #####
 ##### (H6)
-소스코드 쓰기위한 시작 (```)
+
 ```cs
 using UnityEngine;
 public class sample : MonoBehaviour
@@ -14,7 +14,9 @@ void Start()
 Debug.Log("Hi");
 }
 }
-
-
-
 ```
+**굵은 글씨**
+~~Sample.fbx 파일 사용~~ 
+> 테스트1
+>> 테스트1
+>>> 테스트1
