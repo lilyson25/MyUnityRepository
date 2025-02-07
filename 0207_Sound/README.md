@@ -49,3 +49,13 @@
 
 # 유니티 Recorder 
 > package Manager를 통해 다운받아 사용
+* 윈도우> 일반> 레코더> 레코더 윈도우
+  * Exit Play mode 체크하면 녹화끝났을때 플레이도 끝
+  * Recording Mode : Manual(사용자 직접 녹화설정종료가능)
+  * Playback 녹화중 일정 프레임 속도 유지
+  * Target FPS 녹화 FPS 지정
+  * Cap 설정한 FPS를 넘지 않도록 제한
+  * Movie (게임 씬 녹화에 사용)
+
+
+  
