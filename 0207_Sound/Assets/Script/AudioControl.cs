@@ -17,16 +17,12 @@ public class AudioControl : MonoBehaviour
     }
     void PlayMusic()
     {
-         audioSourceBGM.clip = bgm;
-         bgm = GameObject.Find("BGM").GetComponent<AudioClip>();
-         audioSourceBGM.Play(); //클립실행
+        audioSourceBGM.Play();
         Debug.Log("start");
     }
     void StopMusic()
     {
-        audioSourceBGM.clip = bgm;
-        bgm = GameObject.Find("BGM").GetComponent<AudioClip>();
-        audioSourceBGM.Stop(); 
+        audioSourceBGM.Stop();
         Debug.Log("stop");
 
     }
