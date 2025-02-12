@@ -167,6 +167,14 @@ public class DelegateExample : MonoBehaviour
 
  
       ```
+## C# 이벤트 구현 순서
+| 단계  | 설명                                  | 코드 예시                                   |
+|------|-------------------------------------|-------------------------------------------|
+| 1️⃣ 델리게이트 선언 | 이벤트에 사용할 함수 타입 정의 | `public delegate void MyEventHandler();` |
+| 2️⃣ 이벤트 선언 | 이벤트 생성 (델리게이트 기반) | `public event MyEventHandler OnEventTriggered;` |
+| 3️⃣ 이벤트 핸들러 연결 | 이벤트가 발생할 때 실행
+
+
 ---
 #### 이벤트 예제
 > 플레이어가 3번 공격하면 OnAttack 이벤트가 발생
