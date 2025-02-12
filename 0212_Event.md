@@ -71,7 +71,12 @@ void UseDelegate(DelegateTest dt)
 ```
 
 ### Observer
->
+*
+*
+*
+
+
+
 ---
 ## Event
 > 개체에 작업 실행을 알리는 메시지
