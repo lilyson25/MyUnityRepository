@@ -10,7 +10,16 @@
 - 오류 발생시, 선생성 후 다이어그램에 드래그해서 추가가능
 - 공백클릭> 우클릭> export관련 메뉴 클릭> Diagram을 이미지로 export할 수 있다
 
-
+---
+### 유니티에서 제공해주는 Event, Ipointer
+- Ipointer Interface : 기본제공되는 인터페이스
+- 다음과 같은 조건이 필요함
+    - 클릭, 터피, 드래그 등의 이벤트를 구현할때 사용 
+    - 1. UI 오브젝트에는 Graphic Raycaster 컴포넌트가 추가되어있어야 하고, Raycast Target이 체크된 상태여야 함
+    - 2. Scene에는 Event System 컴포넌트가 존재해야 한다
+    - 3. 오브젝트에 대한 작업시에는 Collider 컴포넌트가 추가되어야 한다
+    - 4. Main camera에 Physics Raycaster 컴포넌트가 추가되어야 한다
+      
 #### 지원되는 이벤트
 - IPointerEnterHandler - OnPointerEnter - 포인터가 오브젝트에 들어갈 때 호출됩니다.
 - IPointerExitHandler - OnPointerExit - 포인터가 오브젝트에서 나올 때 호출됩니다.
