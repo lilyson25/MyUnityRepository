@@ -29,11 +29,12 @@
 - IMoveHandler - OnMove - 이동 이벤트(왼쪽, 오른쪽, 위쪽, 아래쪽 등)가 발생했을 때 호출됩니다.
 - ISubmitHandler - OnSubmit - 전송 버튼이 눌렸을 때 호출됩니다.
 - ICancelHandler - OnCancel - 취소 버튼이 눌렸을 때 호출됩니다.
+---
+## Delegate(델리게이트), Factory(팩토리), Observer(옵저버) 패턴 (비교해서 편리한것으로 선택가능)
+### Delegate 
+> 함수를 대입할 수 있는 변수. 대리자라고 부른다, 콜백(Callback) 기능을 제공하는 패턴으로 특정 이벤트가 발생하면 미리 등록된 함수(메서드)가 자동으로 실행
 
-# 비교해서 편리한것으로 선택가능 Delegate/ Observer
-## Delegate 
-> 함수를 대입할 수 있는 변수. 대리자라고 부른다
-    * 해당변수에는 함수가 대입되어있으므로 해당변수를 실행하면 대입한 함수가 실행되는 방식
+* 해당변수에는 함수가 대입되어있으므로 해당변수를 실행하면 대입한 함수가 실행되는 방식
 * delegate 선언 방법 : 접근제한자 delegate 타입 델리게이트(매개변수)
   - delegate void DelegateTest2(int a, int b);
   - delegate string DelegateText(float x);
@@ -44,7 +45,6 @@
    
 * 델리게이트 체인
   - delegae는 +=를 통해 대리할 함수를 더 추가할 수 잇고 -=를 통해 대리한 함수를 제거도 가능
-
 ```
 //ex1)
 void UseDelegate(DelegateTest dt)
@@ -60,3 +60,45 @@ void UseDelegate(DelegateTest dt)
     else return MoveLeft;
 }
 ```
+
+### Observer
+>
+---
+## Event
+> 개체에 작업 실행을 알리는 메시지
+> 이벤트는 이벤트 가입자에게 특정 작업을 알려주는 기능
+
+#### Event Handler 
+> 이벤트가 발생할 때 어떤 명령을 실행할지 지정해주는 것
+
+* 이벤트는 += 연산자를 통해 이벤트 핸드러를 이벤트에 추가할 수 있다
+* -= 연산자를 통해 이벤트 핸들러를 삭제하는 것이 가능
+* 하나의 이벤트에는 여러 개의 이벤트 핸들러를 추가하는 것이 가능
+* 추가한 핸들러들은 순차적으로 호출
+
+##### 이벤트 정의
+   -  1. 이벤트명 변수명 = new 이벤트명(); 
+   -  2. 이벤트 핸드러에 이벤트 연결 : ~~ += ~~ 
+   -  3. 이벤트 진행을 위해 기능 진행
+   -  4.이벤트가 발생했을때 실행될 코드
+```    
+public void OnKill()
+ {
+        CountPlus(); //킬 수 증가
+        if (count == 5)
+        {
+            count = 0;//리셋 
+            kill(this, EventArgs.Empty); //이벤트 핸들러들을 호출합니다
+        }
+        else
+        {
+            Debug.Log($"fdfsfsdf");
+        }
+}
+```
+
+### Delegate를 이용한 Event (더 쉬운 방법)
+> 함수의 이름을 찾아서 내부의 기능을 추적하는 기능 
+
+
+# 과제 : class 다이아그램 만들어서 캡쳐해서 올리기
