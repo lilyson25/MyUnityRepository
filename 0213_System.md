@@ -1,6 +1,6 @@
 # 유니티 시스템
 
-## ScriptableObject  
+## Scriptable Object  
 > 클래스 인스턴스와는 별도로 대량의 데이터를 저장하는 데 사용할 수 있는 데이터 컨테이너(데이터 저장 객체)      
 > https://docs.unity3d.com/kr/2022.3/Manual/class-ScriptableObject.html
 
@@ -11,22 +11,40 @@
 * 단점
   - 복잡한 데이터 구조등에서는 직렬화[Serializable]가 되지않는 경우가 있어 데이터 손실 발생위험이 있다
   - 멀티 쓰레드 환경에서는 데이터 처리 시 충돌문제가 우려(DB활용이 낫다)
-
-* 적용방법
-  - 스크립트로 빈오브젝트에 연결은 불가능하다   
-  - 스크립트오브젝트를 선언해주면, 우클릭> 선언한명칭으로 선택해서 오브젝트를 생성할 수 있다
     
 * 사용하기 좋은 예
  - 게임에 대한 기본 설정 값 (난이도 설정, 사운드 설정, 컨트롤 설정)
  - 행동 패턴이나 능력치 등에 대한 설정
  - 별도의 데이터베이스를 따로 구현하지 않는다는 전제로 아이템 데이터베이스를 만들기 좋다
 
+* Scriptable Object만드는 방법
+  - 스크립트로 빈오브젝트에 연결은 불가능하다   
+  - 스크립트오브젝트를 선언해주면, 우클릭> 선언한명칭으로 선택해서 오브젝트를 생성할 수 있다
+```
+using UnityEngine;
+
+[CreateAssetMent]
+public Class 클래스명 : ScriptableObject
+{
+필드
+메소드
+프로퍼티
+}
+```
+- 게임 오브젝트에 직접적으로 연결할 수 없는대신, Create를 통해 만든 클래스명으로 등록이 되는 것을 볼 수 있다
+![image](https://github.com/user-attachments/assets/842ff2dd-710d-450f-9363-b96157cd730f)
+![image](https://github.com/user-attachments/assets/0fbaa6ab-f399-44bc-b5c4-fd0109d2fcbe)
 ---
 ### CreateAssetMenu
 * (  )에 filename, menuname, order를 설정할 수 잇음
 * filename : 생성되는 에셋의 이름
 * menuname : create를 통해 만들어지는 메뉴의 이름을 설정, /를 넣을 경우 경로가 추가됨
 * order : 메뉴중에서 몇번째 위치에 존재할 지 표시할때 설정하는 값, 값이 클수록 마지막에 표기
+```
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "파일명", menuName = "경로/메뉴", order = 숫자)
+```
 
 ---
 ### using System을 사용하면서 유니티의 랜덤을 사용하고 싶은경우
