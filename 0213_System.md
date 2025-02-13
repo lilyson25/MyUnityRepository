@@ -22,3 +22,61 @@
  - 별도의 데이터베이스를 따로 구현하지 않는다는 전제로 아이템 데이터베이스를 만들기 좋다
 
 ---
+### CreateAssetMenu
+* ()에 filename, menuname, order를 설정할 수 잇음
+* filename : 생성되는 에셋의 이름
+* menuname : create를 통해 만들어지는 메뉴의 이름을 설정, /를 넣을 경우 경로가 추가됨
+* order : 메뉴중에서 몇번째 위치에 존재할 지 표시할때 설정하는 값, 값이 클수록 마지막에 표기
+
+---
+### using System을 사용하면서 유니티의 랜덤을 사용하고 싶은경우
+> using Random = UnityEngine.Random;
+
+---
+ ## 자료구조 Datastructure (데이터 값의 모임)
+> 유니티에서 특정  데이터 또는 기능을 구현하기 귀해 적압한 자료형을 고르는 건 필수
+> 기본 자료형 이외에 ㅡㄱ정기능, 작업을 진행할 수 있는 데이터 집합체를 자료구조라 부른다.
+
+* 자주 활용되는 자료구조
+  - List : 순서대로 저장할 수 있고, 저장데이터를 추가 삭제 검색할 수있는 변경이 가능한 배열 
+  - Dictionary : 키 - 값으로 묶어 저장할 수 있는 형태(json 파일에서도 확인가능)
+  - Queue : 자료를 선입선출(FIFO)로 관리할 때 사용할 자료구조
+  - stack : 자료를 후입선출(LIFO)로 관리할 때 사용할 자료구조
+  - HashSet : 데이터의 중복을 전혀 허락하지 않는 경우, 정렬 순서가 필요없는 경우
+ 
+### Queue
+  - 제공해주는 기능 : 삽입, 삭제, 첫번째 값 조회가능
+  - 단점 : 중간에 있는 데이터를 접근하는 부분에선 매우 비효율적임
+  - 이를 이용하기 좋은 시스템
+    - 대화시스템) 대화에 대한 데이터의 묶음을 따로 가지고 있다
+    - 큐에 해당 데이터들을 순서대로 Enqueue한다
+    - 버튼이나 키를 누른다음 대화로 이동하는 기능을 추가 : 전달받은 Queue를 Dequeue한다
+    - 화면상에 UI>Text에 전달받은 받은 값을 적용하면 대화기능처럼 보임
+    - add) Text가 텍스트처럼 타이핑되는 효과(코루틴설계)와 함께 한다면 보기 좋음
+ 
+```
+public class DataStructure : MonoBehaviour
+{
+    //string 형태의 값만 저장할 수 있는 큐
+   public Queue<string> stringQueue = new Queue<string>() ;
+
+    private void Start()
+    {
+        //1. Queue에 데이터 추가
+        stringQueue.Enqueue("uno");
+        stringQueue.Enqueue("dos");
+        stringQueue.Enqueue("tres");
+        stringQueue.Enqueue("quatro");
+        stringQueue.Enqueue("cinco");
+
+        //2. 첫번째 데이터 조회
+        foreach(string dialog in stringQueue) //stringQueue에서 대화를 하나하나 가져오겟다
+        {
+            Debug.Log(stringQueue.Peek()); //queue에 저장된 맨 앞의 값을 return
+
+        }
+        //3. Queue에 데이터 삭제
+      
+        Debug.Log(stringQueue.Dequeue()); //queue에 저장된 맨 앞의 값을 return, 추가적으로 맨앞의 값을 제거 
+```
+---
