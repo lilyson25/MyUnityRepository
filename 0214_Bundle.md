@@ -142,8 +142,9 @@ https://unity.com/kr/resources/level-up-your-code-with-game-programming-patterns
 > 에셋등록방법> 프리팹 하단에 AssetBundle> new로 생성(.으로 폴더화 가능)
 
  > 번들 빌드방법 : 에셋폴더에 Editor폴더를 생성해 스크립트를 작성한다
-
-
+---
+### Addressables
+> 패키지매니저> Addressables찾아서 인스톨
 
 
 
