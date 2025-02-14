@@ -7,7 +7,8 @@
 5. Singleton
 ```
 ## Scene등록방법
-> File> Build Profiles-> Scene list에 씬을 드래그해서 등록   
+> File> Build Profiles-> Scene list에 씬을 드래그해서 등록
+
 > 씬로드설정   
 >> 1. Single : 다른씬으로 이동할 경우 기존씬이 파괴
 >> 2. Additive : 게임내 씬이 동시에 켜짐(기존씬에 새로운 씬이 들어오는 형태)
@@ -113,21 +114,29 @@ public class SceneSample : MonoBehaviour
 https://unity.com/kr/resources/level-up-your-code-with-game-programming-patterns
 
 > 공통적으로 사용되는 데이터를 하나의 객체(인스턴스)로 돌려쓴다
+
 > 싱글톤 패턴의 장점은 별도로 가져올 필요없이 바로 사용할 수 있다
+
 > 대신, 싱글톤 패턴으로 설계한 인스턴스가 너무 많은 데이터를 공유하는 경우, 수정이 어렵고 테스트도 까다롭다
 
 ---
 ## C# 일반화 프로그램(Generic Programming) 
 > 데이터 형식에 대한 일반화를 진행하는 기법
+
 > <T> 를 이욯해서 설계하는 방식
 ---
 ### visual studio 코드작성 중 번개표시로 자동으로 뜨는 부분 : 이벤트
 ---
 ### Asset Bundle
-> https://docs.unity3d.com/kr/current/Manual/AssetBundlesIntro.html   
-> 에셋을 묶은 아카이브 파일   
-> Asset : 유니티에서 쓸 수 있는 데이터(model, texture, audioClip, Material...)   
+> https://docs.unity3d.com/kr/current/Manual/AssetBundlesIntro.html
+
+> 에셋을 묶은 아카이브 파일
+
+> Asset : 유니티에서 쓸 수 있는 데이터(model, texture, audioClip, Material...)
+  
 > 사용하는 이유? : Application에 다운로드를 진행하기 편하기위함 -> 런타임환경에서 에셋을 불러서 사용할 수 있따
+
+> DLC제공/ 컨텐츠패치/ 모바일게임등에서 초기 인스톨 사이즈 감소(구글 플레이어에 등록할 수 있는 앱의 사이즈가 정해져있어서 내부에서 추가 다운로드 해결)
 
 
 
