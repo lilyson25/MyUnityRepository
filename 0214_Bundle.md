@@ -137,6 +137,11 @@ https://unity.com/kr/resources/level-up-your-code-with-game-programming-patterns
 > 사용하는 이유? : Application에 다운로드를 진행하기 편하기위함 -> 런타임환경에서 에셋을 불러서 사용할 수 있따
 
 > DLC제공/ 컨텐츠패치/ 모바일게임등에서 초기 인스톨 사이즈 감소(구글 플레이어에 등록할 수 있는 앱의 사이즈가 정해져있어서 내부에서 추가 다운로드 해결)
+---
+### Asset등록방법
+
+에셋등록방법> 프리팹 하단에 AssetBundle> new로 생성(.으로 폴더화 가능)
+
 
 
 
