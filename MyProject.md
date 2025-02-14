@@ -1,5 +1,7 @@
 # 개인프로젝트 로드맵
 > https://artsandculture.google.com/experiment/don-t-touch-the-art/EwElh6DBf5inTA
+>
+> http://youtube.com/post/UgkxrDosMlSBdz5fv_OjE-GuB1aIrF8CFvwY?si=C7nRH9GzPf_p6Hqg
 
 > 예술 조각품을 망치지 않고 플레이어가 작품을 학습하도록 유도하는 미니게임
 
