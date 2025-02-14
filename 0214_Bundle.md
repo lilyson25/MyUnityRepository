@@ -1,3 +1,11 @@
+# 오늘 수업 정리 
+```
+1. Scene> Sync/Async -> Task에 대한 작업
+2. Async, await
+3. DontdestroyOnLoad
+4. Manager코드
+5. Singleton
+```
 ## Scene등록방법
 > File> Build Profiles-> Scene list에 씬을 드래그해서 등록
 > 씬로드설정
@@ -101,5 +109,22 @@ public class SceneSample : MonoBehaviour
   }
   ```
 ---
+## 유니티의 디자인패턴코드 : Singleton
+https://unity.com/kr/resources/level-up-your-code-with-game-programming-patterns
 
+> 공통적으로 사용되는 데이터를 하나의 객체(인스턴스)로 돌려쓴다
+> 싱글톤 패턴의 장점은 별도로 가져올 필요없이 바로 사용할 수 있다
+> 대신, 싱글톤 패턴으로 설계한 인스턴스가 너무 많은 데이터를 공유하는 경우, 수정이 어렵고 테스트도 까다롭다
+
+---
+## C# 일반화 프로그램(Generic Programming) 
+> 데이터 형식에 대한 일반화를 진행하는 기법
+> <T> 를 이욯해서 설계하는 방식
+---
 ### visual studio 코드작성 중 번개표시로 자동으로 뜨는 부분 : 이벤트
+---
+### 
+
+
+
+
