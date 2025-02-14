@@ -7,8 +7,8 @@
 5. Singleton
 ```
 ## Scene등록방법
-> File> Build Profiles-> Scene list에 씬을 드래그해서 등록
-> 씬로드설정
+> File> Build Profiles-> Scene list에 씬을 드래그해서 등록   
+> 씬로드설정   
 >> 1. Single : 다른씬으로 이동할 경우 기존씬이 파괴
 >> 2. Additive : 게임내 씬이 동시에 켜짐(기존씬에 새로운 씬이 들어오는 형태)
 >> 3. 주의사항 : Audio Listner중복조심/ 카메라기준으로 작업하는 코드를 짰을때 기존의 설정으로 동작이 제대로 안될 가능성이 있음/ Additive로 씬을 불러올 경우에 기존씬의 actuve Scene으로 유지되어있음
@@ -123,7 +123,11 @@ https://unity.com/kr/resources/level-up-your-code-with-game-programming-patterns
 ---
 ### visual studio 코드작성 중 번개표시로 자동으로 뜨는 부분 : 이벤트
 ---
-### 
+### Asset Bundle
+> https://docs.unity3d.com/kr/current/Manual/AssetBundlesIntro.html   
+> 에셋을 묶은 아카이브 파일   
+> Asset : 유니티에서 쓸 수 있는 데이터(model, texture, audioClip, Material...)   
+> 사용하는 이유? : Application에 다운로드를 진행하기 편하기위함 -> 런타임환경에서 에셋을 불러서 사용할 수 있따
 
 
 
