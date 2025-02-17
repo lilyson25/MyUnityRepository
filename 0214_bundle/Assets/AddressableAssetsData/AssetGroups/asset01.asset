@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: asset01
+  m_EditorClassIdentifier: 
+  m_GroupName: asset01
+  m_GUID: 3165c9e0858fcc84087c57a527643dce
+  m_SerializeEntries:
+  - m_GUID: a9976b940c264c642b847fa3696f8406
+    m_Address: Assets/Prefabs/RedS.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 82abe0c042a43ee48bbb993e8d247245, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6b0f0c98e6ccd734590969d2388ccd4f, type: 2}
+    - {fileID: 11400000, guid: f574d5483ac38c04e9bcaafca4eccca1, type: 2}

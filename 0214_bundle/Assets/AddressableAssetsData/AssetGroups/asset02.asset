@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: asset02
+  m_EditorClassIdentifier: 
+  m_GroupName: asset02
+  m_GUID: 9dc19daf35d0a494cbe0a5e5d5e18476
+  m_SerializeEntries:
+  - m_GUID: 892f7dadef80a7f4e94027e445182f14
+    m_Address: Assets/Prefabs/BlueS.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 82abe0c042a43ee48bbb993e8d247245, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5cf342d777825a444839c7de64fa5fd0, type: 2}
+    - {fileID: 11400000, guid: 5d6d951a9fc802742a92c473790f40fd, type: 2}

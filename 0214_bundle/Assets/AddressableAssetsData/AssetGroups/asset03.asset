@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: asset03
+  m_EditorClassIdentifier: 
+  m_GroupName: asset03
+  m_GUID: 068ce4d490ab8a046a323a1fc5de87ec
+  m_SerializeEntries:
+  - m_GUID: 8c7805e2453fa1440b53c0ce75e731e5
+    m_Address: Assets/Prefabs/YelloS.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 82abe0c042a43ee48bbb993e8d247245, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 30323024acbda8746bd4615a07dcc903, type: 2}
+    - {fileID: 11400000, guid: 2f9f7a2ab64dfd049b950acab959ae50, type: 2}
