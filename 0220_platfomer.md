@@ -22,4 +22,8 @@
 
 > UI> image> 넣을 이미지를 소스이미지에 연결> 
 
-### 컴포넌트창에서 onclickevent를 연결할때는 항상 오브젝트에 연결된 스크립트를 드래그해서 넣는다
+### -중요- 컴포넌트창에서 onclickevent를 연결할때는 항상 오브젝트에 연결된 스크립트를 드래그해서 넣는다
+### -중요- tag연결코드와 맞게 tag설정 
+
+> 프리팹> canvas안에 두 스크립트를 넣고 설정할 수 있다.
+https://media.discordapp.net/attachments/1329684212747599924/1342031410546081802/image.png?ex=67b827a6&is=67b6d626&hm=10b601d093faaaad76485f31f3fd2e9dd792ef2784df19682eb68fc53e3108cd&=&format=webp&quality=lossless
