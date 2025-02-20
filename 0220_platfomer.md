@@ -27,3 +27,22 @@
 
 > 프리팹> canvas안에 두 스크립트를 넣고 설정할 수 있다.
 https://media.discordapp.net/attachments/1329684212747599924/1342031410546081802/image.png?ex=67b827a6&is=67b6d626&hm=10b601d093faaaad76485f31f3fd2e9dd792ef2784df19682eb68fc53e3108cd&=&format=webp&quality=lossless
+
+-----
+### 추가작업정리
+```
+[아이템]
+파란 아이템을 먹으면 얼음이 된다
+빨간 아이템을 먹으면 속도가 빨라진다
+
+[허들]
+needle은 아래,위에서 움직인다
+cannon은 shell을 계속 발사하는 애니메이션을 통해 shell을 만난 player는 사망하고 게임오버
+
+[lever]
+끊어진 길에서 lever를 만나면 lever의 sprite가 on으로 바뀌고 고정키를 이용해서 디딤돌을 움직여 발판을 만든다
+
+[scoreborad]
+Scoreboard에 아이템수치를 보여준다 (scoremanager가 필요???)
+```
+ 
