@@ -13,8 +13,8 @@ public class Spawner : MonoBehaviour
     public float re_rate = 2.0f; //생
                                  //성 위치를 기준으로 생성되는 영역(구)를 설정할 수 있다
 
-    public static List<Monster> monster_List = new List<Monster>(); //생성된 몬스터, using Generic추가
-    public static List<Player> player_List = new List<Player>(); //생성된 캐릭터
+    public static List<Monster> monster_list = new List<Monster>(); //생성된 몬스터, using Generic추가
+    public static List<Player> player_list = new List<Player>(); //생성된 캐릭터
 
     void Start()
     {
@@ -64,7 +64,7 @@ public class Spawner : MonoBehaviour
                 // result.GetComponent<Monster>().MonsterSample();
                 result.transform.position = pos;
                 result.transform.LookAt(Vector3.zero);
-                monster_List.Add(result.GetComponent<Monster>());//생성한 유닛을 몬스터 리스트에 추가
+                monster_list.Add(result.GetComponent<Monster>());//생성한 유닛을 몬스터 리스트에 추가
             });
 
             /*            --> Monster.cs에 아래코드를 넣어 Action test해본다

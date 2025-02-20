@@ -10,6 +10,11 @@ public class Player : Character
         //케릭터 클래스의 start시작
         base.Start();
 
+        if (animator == null)
+        {
+            Debug.LogError("애니메이터 할당필요");
+        }
+
         //시작값 설정
         start_pos = transform.position;//local position은 부모에서의 거리(상대적인 거리)
         rotation = transform.rotation;
@@ -21,7 +26,7 @@ public class Player : Character
         if (target == null)
         {
             //가까운 타겟을 조사한다
-            TargetSearch(Spawner.monster_List.ToArray());
+            TargetSearch(Spawner.monster_list.ToArray());
             //리스트명.ToArray()를 통해 List=> array로 변경
 
             float pos = Vector3.Distance(transform.position, start_pos);

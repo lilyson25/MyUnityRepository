@@ -2,7 +2,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Character : MonoBehaviour
 {
-    Animator animator;
+    protected Animator animator;
 
     //일반적인 방치형 게임의 체력이나 공격력 등의 수치는 매우 높은 편에 속함
     public double hp;
@@ -21,9 +21,9 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    protected void SetMotionChange(string motionName, bool param)
+    protected void SetMotionChange(string motion_name, bool param)
     {
-        animator.SetBool(motionName, param);
+        animator.SetBool(motion_name, param);
     }
     protected Transform target; //타겟에 대한 정보(위치)
 
