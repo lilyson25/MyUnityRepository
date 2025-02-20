@@ -7,6 +7,7 @@
 
 
 2D기본설정 
+Rigidbody2D> constrains> Freeze Rotation> Z체크
 
 Assets> creat> 2d> Physics Material 2D 마찰력과 튕김정도 조절
 
