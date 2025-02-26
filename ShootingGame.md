@@ -24,3 +24,7 @@
 - 영역 오브젝트 배치
   
 > rigidbody에서 isKinematic체크하면 충돌만 감지하라고 
+
+
+# 변수표기법
+![image](https://github.com/user-attachments/assets/9e526da1-8670-4ebb-9518-df02c4a3d960)
