@@ -86,3 +86,18 @@ https://youtube.com/shorts/ScHQkN0MBqs?si=fZ37TCvQFmukpymc
 ✅ 짧은 시간 안에 빠르게 즐길 수 있는 미니게임 형태로 개발!
 ✅ 플레이어가 계속 도전하고 싶도록 난이도와 재미 요소를 추가!
 
+
+
+# 시나리오 (브랜드 캐릭터를 활용한 홍보 이벤트 미니게임)
+- 1. Title : 입장하기 
+![image](https://github.com/user-attachments/assets/512374e2-35de-4b84-8a2f-b64a9c0d5fa8)
+- 2. 난이도 선택하기 : 상중하로 도전하게 만듬 (시간제약으로 난이도 조절) 마우스 커서 클릭 or 키보드 키값 or 휴대폰 터치?로 캐릭터 고르기 -> '게임시작하기' 버튼 필요
+- 3. 게임 : 점프하면서 당근(잎쪽)을 땅에 박는다, 아무리 점프를 많이해도 땅에 다 박히지는 않는다.
+      - '제한시간', '다시하기' 버튼 필요
+![image](https://github.com/user-attachments/assets/210db42d-393e-4f74-9384-9215c792a9d7)
+- 4. 게임 종료 :
+      - 게임을 완료하면 축하하는 페이지로 이동 : 스코어 알려줌,  '다시 도전하기' 버튼 필요
+      - 게임을 완료하지 못하면 아쉬워하는 페이지로 이동 : '다시 도전하기' 버튼 필요
+![image](https://github.com/user-attachments/assets/74a80898-798a-49ea-8600-e43cb65adb92)
+
+
